@@ -66,4 +66,12 @@ def print_list(lst):
     print()
 
 if __name__ == "__main__":
+    print("Task 1")
+    print("~~~~~~~~~~~~~~~~~~~~~~~~~~")
+    execute_task1()
+    print("~~~~~~~~~~~~~~~~~~~~~~~~~~")
+    input()
+    print("Task 2")
+    print("~~~~~~~~~~~~~~~~~~~~~~~~~~")
     execute_task2()
+    print("~~~~~~~~~~~~~~~~~~~~~~~~~~")
