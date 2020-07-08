@@ -1,26 +1,26 @@
 from random import randint
 
-def game_bull(lst, number, i = -1):
+def game_bull(lst, number):
     """This function returns the number of digits you guessed"""
-    if len(number) > 1 and number[i] in lst:
+    if len(number) > 1 and number[-1] in lst:
         number.pop()
         return 1 + game_bull(lst, number)
-    elif len(number) == 1 and number[i] in lst:
+    elif len(number) == 1 and number[-1] in lst:
         return 1
-    elif len(number) > 1 and not number[i] in lst:
+    elif len(number) > 1 and not number[-1] in lst:
         number.pop()
         return game_bull(lst, number)
     else:
         return 0
 
-def game_cow(lst, number, j = -1, i = -1):
+def game_cow(lst, number, j = -1):
     """This function returns the number of digits you guessed and which are in their place"""
-    if len(number) > 1 and number[i] == lst[j]:
+    if len(number) > 1 and number[-1] == lst[j]:
         number.pop()
         return 1 + game_cow(lst, number, j - 1)
-    elif len(number) == 1 and number[i] == lst[j]:
+    elif len(number) == 1 and number[-1] == lst[j]:
         return 1
-    elif len(number) > 1 and number[i] != lst[j]:
+    elif len(number) > 1 and number[-1] != lst[j]:
         number.pop()
         return game_cow(lst, number, j - 1)
     else:
@@ -46,10 +46,10 @@ if __name__ == "__main__":
     while True:
         count += 1
         num = int(input("\nEnter your four-digit number -> "))
+        if num == 0:
+            print("Computer's number:", number)
+            break
         if num >= 1000 and num < 10000:
-            if num == 0:
-                print("Computer's number:", number)
-                break
             if  num == number:
                 print("You Win!")
                 print("Guesses:", count)
