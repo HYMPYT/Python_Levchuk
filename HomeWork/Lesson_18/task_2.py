@@ -1,7 +1,7 @@
 
 #! CONSTS
-VOWELS = ['a', 'e', 'i', 'o', 'u', 'y']
-CONSONANT =['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'z']
+VOWELS = ('a', 'e', 'i', 'o', 'u', 'y')
+CONSONANT = ('b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'z')
 
 def write_analytics(file_name: str, number_of_chars: int, number_of_lines: int, number_of_digits: int, number_of_vowels: int, number_of_consonant: int) -> None:
     '''This function writes the transmitted analytical data to a file.'''

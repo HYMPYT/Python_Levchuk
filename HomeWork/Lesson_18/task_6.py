@@ -1,6 +1,6 @@
 
 #! CONSTS
-PUNCTUATION = [',', '.', '!', '?', ':', ';']
+PUNCTUATION = (',', '.', '!', '?', ':', ';')
 
 def replace(file_name: str, old_word: str, new_word: str) -> None:
     '''This function replaces all occurrences of the old word in the file with the new one.'''
