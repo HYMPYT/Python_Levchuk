@@ -61,11 +61,11 @@ if __name__ == "__main__":
                     break
 
                 elif choice == COUNTRIES_LIST:
-                    if len(COUNTRIES._COUNTRIES) > 1:
+                    if len(COUNTRIES.get_countries()) > 1:
                         print("\n~~~~~~ Countries ~~~~~~")
                     else:
                         print("\n~~~~~~ Country ~~~~~~")
-                    print_result(COUNTRIES._COUNTRIES)
+                    print_result(COUNTRIES.get_countries())
 
                 elif choice == ADD_COUNTRY:
                     country_name = input('Enter the name of the country: ')
@@ -127,11 +127,11 @@ if __name__ == "__main__":
                     break
 
                 elif choice == MUSIC_BANDS_LIST:
-                    if len(MUSIC_BANDS._MUSIC_BANDS) > 1:
+                    if len(MUSIC_BANDS.get_music_bands()) > 1:
                         print("\n~~~~~~ Music bands ~~~~~~")
                     else:
                         print("\n~~~~~~ Music band ~~~~~~")
-                    print_result(MUSIC_BANDS._MUSIC_BANDS)
+                    print_result(MUSIC_BANDS.get_music_bands())
 
                 elif choice == ADD_MUSIC_BAND:
                     band_name = input('Enter a name for the music band: ')
