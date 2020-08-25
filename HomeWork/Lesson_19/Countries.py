@@ -1,5 +1,6 @@
 from pickle import load, dump
 
+
 class Country:
     def __init__(self):
         self.__COUNTRIES = {}

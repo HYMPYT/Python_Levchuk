@@ -1,5 +1,6 @@
 from pickle import load, dump
 
+
 class MusicBand:
     def __init__(self):
         self.__MUSIC_BANDS = {}

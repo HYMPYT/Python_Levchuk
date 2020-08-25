@@ -2,6 +2,7 @@ from pprint import pprint
 import MusicBands
 import Countries
 
+
 def print_result(*args) -> None:
     """Prints the elements that are passed as a parameter."""
     for element in args:
